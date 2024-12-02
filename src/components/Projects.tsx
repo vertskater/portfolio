@@ -58,6 +58,14 @@ export default function Projects() {
       live: "https://my-drive-production.up.railway.app/",
       img: "/img/mydrive.png",
     },
+    {
+      title: "Blog API",
+      description:
+        "Eine API zum Abrufen von Blogbeiträgen und Kommentaren. Umgesetzt mit Nodejs/Express/PostgreSQL.",
+      github: "https://github.com/vertskater/blog-api",
+      live: "",
+      img: "/img/blog-api.png",
+    },
   ];
 
   return (
