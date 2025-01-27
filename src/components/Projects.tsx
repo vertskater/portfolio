@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import projects from "./projects.ts";
 import "./styles/Projects.css";
 
 export default function Projects() {
@@ -18,55 +19,7 @@ export default function Projects() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const projects = [
-    {
-      title: "Bookshelf",
-      description:
-        "Eine einfaceh CRUD Applikation die Firebase als Datenbank und Benutzer-Authentifizierung nutzt.",
-      github: "https://github.com/vertskater/bookshelf-fs",
-      live: "https://bookshelf-fs.vercel.app/",
-      img: "/img/bookshelf-fs.png",
-    },
-    {
-      title: "React Memory Game",
-      description:
-        "Ein einfaches Merkspiel mit Highscore Anzeige und Punktestand Zähler.",
-      github: "https://github.com/vertskater/memory-game/tree/main",
-      live: "https://memory-game-woad-psi.vercel.app/",
-      img: "/img/memory-game.png",
-    },
-    {
-      title: "React Shopping Cart",
-      description:
-        "Ein kleines Webshop-Frontend mit Suchfunktion und Warenkorb",
-      github: "https://github.com/vertskater/shopping-cart",
-      live: "https://shopping-cart-six-lac.vercel.app/",
-      img: "/img/shopping-cart.png",
-    },
-    {
-      title: "Webshop PHP",
-      description: "Ein Webshop mit PHP und MariaDB als Datenbank.",
-      github: "https://github.com/vertskater/php-webshop",
-      live: "",
-      img: "/img/webshop-php.png",
-    },
-    {
-      title: "My-Drive",
-      description:
-        "Eine Applikation mit Nodejs/Express/PostgreSQL zum Erstellen von Verzeichnissen und hochladen von Dateien.",
-      github: "https://github.com/vertskater/my-drive",
-      live: "https://my-drive-production.up.railway.app/",
-      img: "/img/mydrive.png",
-    },
-    {
-      title: "Blog API",
-      description:
-        "Eine API zum Abrufen von Blogbeiträgen und Kommentaren. Umgesetzt mit Nodejs/Express/PostgreSQL.",
-      github: "https://github.com/vertskater/blog-api",
-      live: "",
-      img: "/img/blog-api.png",
-    },
-  ];
+
 
   return (
     <section className={`projects ${isVisible ? "visible" : ""}`} id="projects">
@@ -100,6 +53,11 @@ export default function Projects() {
                   </a>
                 )}
               </div>
+            </div>
+            <div className="tech-stack">
+              {project.techStack?.map(tech => {
+                return <img src={tech} alt={`tech-icon`}/>
+              })}
             </div>
           </div>
         ))}
