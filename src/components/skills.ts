@@ -19,6 +19,10 @@ const skills = [
     { name: "WebStorm", icon: "/icons/webstorm.svg" },
     { name: "PHPStorm", icon: "/icons/phpstorm.svg" },
     { name: "VSCode", icon: "/icons/vscode.svg" },
+    { name: "Vite", icon: "/icons/vite.svg" },
+    { name: "React-Router-Dom", icon: "/icons/react-router.svg" },
+    { name: "JWT", icon: "/icons/jwt.svg" },
+    { name: "Socket.io", icon: "/icons/socket.svg" },
 ];
 
 export default skills;

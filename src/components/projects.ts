@@ -48,9 +48,18 @@ const projects = [
         description:
             "Eine API zum Abrufen von Blogbeiträgen und Kommentaren. Umgesetzt mit Nodejs/Express/PostgreSQL.",
         github: "https://github.com/vertskater/blog-api",
-        live: "",
+        live: "https://blog-frontend-lac-seven.vercel.app/",
         img: "/img/blog-api.png",
         techStack: ['/icons/nodejs.svg', "/icons/express.svg", '/icons/postgresql.svg', '/icons/prisma.svg', '/icons/jwt.svg']
+    },
+    {
+        title: "Realtime Chat",
+        description:
+            "Ein Echtzeitchat mit Socket.io, Express als Backend und React als Frontend.",
+        github: "https://github.com/vertskater/chat-app-backend",
+        live: "https://chat-app-frontend-one-omega.vercel.app",
+        img: "/img/chatapp.png",
+        techStack: ['/icons/nodejs.svg', "/icons/express.svg", '/icons/postgresql.svg', '/icons/prisma.svg', '/icons/jwt.svg', '/icons/socketio.svg', '/icons/vite.svg']
     },
 ];
 
