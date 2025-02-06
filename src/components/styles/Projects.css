@@ -115,3 +115,48 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
 }
 
+.button {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.75rem 1.5rem;
+    background: lightcoral;
+    color: #1f2937;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.filter {
+    border: solid 3px #fcd34d;
+    border-radius: 5px;
+    padding: 5%;
+}
+.close-msg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    transform: translateX(50%) translateY(-50%);
+    width: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.filter-prj {
+    position: relative;
+}
+
+.filter-prj:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 10px solid transparent;
+    border-left: 10px solid #fcd34d;
+    transform: translateX(100%);
+}
